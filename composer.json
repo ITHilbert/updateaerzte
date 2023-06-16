@@ -1,0 +1,45 @@
+{
+    "name": "ithilbert/uploadaerzte",
+    "type": "libary",
+    "license": "MIT",
+    "description": "SFTP Verbindungen",
+    "keywords": [
+        "it-hilbert",
+        "laravel",
+        "sftp"
+    ],
+    "authors": [
+        {
+            "name": "Jörg Hilbert",
+            "homepage": "https://www.it-hilbert.com",
+            "role": "Developer"
+        },
+        {
+            "name": " Jan Friedrichsen",
+            "homepage": "https://www.webulous.de",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ITHilbert\\UploadAerzte\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ITHilbert\\UploadAerzte\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ITHilbert\\UploadAerzte\\UploadAerzteServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
