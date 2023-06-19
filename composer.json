@@ -21,7 +21,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "league/flysystem-sftp-v3": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "ITHilbert\\UploadAerzte\\": "src/"

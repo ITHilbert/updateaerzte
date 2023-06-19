@@ -38,6 +38,7 @@ class UploadAerzteCommand extends Command
 
             if (! Storage::disk('sftp')->put('VorAerzteSeeder.php', $aerzteSeeder)) {
                 $this->error('Write operation failed!');
+                return false;
             }
 
             $this->info('Write operation successful!');

@@ -2,6 +2,9 @@
 Eine Komponente die als Basis für den Inhalt eine Website dient.
 Diese soll in das Verzeichnis "packages" geclont werden.
 
+## Vorraussetzungen
+- [league/flysystem-sftp-v3](https://laravel.com/docs/9.x/filesystem#driver-prerequisites)
+
 ## Installation
 ```
 composer require ithilbert/uploadaerzte
@@ -46,7 +49,6 @@ SFTP_PASSWORD=mein-passwort
 ```
 \ITHilbert\UploadAerzte\UploadAerzteServiceProvider::class,
 ```
-
 
 ## Authoren
 Jan Friedrichsen
