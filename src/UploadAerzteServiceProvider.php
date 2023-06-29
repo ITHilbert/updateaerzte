@@ -15,6 +15,5 @@ class UploadAerzteServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->commands( \ITHilbert\UploadAerzte\UploadAerzteCommand::class );
-
     }
 }
