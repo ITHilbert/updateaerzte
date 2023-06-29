@@ -1,6 +1,6 @@
 {
-    "name": "ithilbert/uploadaerzte",
-    "type": "libary",
+    "name": "ithilbert/updateaerzte",
+    "type": "library",
     "license": "MIT",
     "description": "SFTP Verbindungen",
     "keywords": [
