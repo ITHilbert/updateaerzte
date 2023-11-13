@@ -31,17 +31,20 @@ SFTP_PASSWORD=mein-passwort
 
             // Settings for SSH key based authentication with encryption password...
             'privateKey' => storage_path('app/ssh/igl_kundencenter_ssh'),
-            'password' => env('SFTP_PASSWORD'),
+            'passphrase' => env('SFTP_PASSWORD'),
+            
+            // Settings for file / directory permissions...
+            'visibility' => 'public', // `private` = 0600, `public` = 0700
+            'directory_visibility' => 'private', // `private` = 0700, `public` = 0755
 
             // Optional SFTP Settings...
             // 'hostFingerprint' => env('SFTP_HOST_FINGERPRINT'),
             'maxTries' => 4,
-            'passphrase' => env('SFTP_PASSWORD'),
             'port' => (int) env('SFTP_PORT', 22),
             'root' => env('SFTP_ROOT', ''),
             'timeout' => 30,
-//             'useAgent' => true,
-//            'throw' => true, // Ab Laravel 9
+        //    'useAgent' => true,
+            'throw' => true, // Ab Laravel 9
         ],
 ```
 
