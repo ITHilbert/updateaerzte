@@ -33,17 +33,17 @@ class UploadAerzteCommand extends Command
             'root' => base_path('/database/seeders'),
         ]);
 
-        if ($disk->exists('VorAerzteTableSeeder.php')) {
-            $aerzteSeeder = $disk->get('VorAerzteTableSeeder.php');
+        if ($disk->exists('DatabaseSeeder.php')) {
+            $praxisSeeder = $disk->get('DatabaseSeeder.php');
 
-            if (! Storage::disk('sftp')->put('VorAerzteTableSeeder.php', $aerzteSeeder)) {
-                $this->error('Write operation failed!');
+            if (! Storage::disk('sftp')->put('DatabaseSeeder.php', $praxisSeeder)) {
+                $this->error('Write operation failed! (DatabaseSeeder.php)');
                 return -1;
             }
 
-            $this->info('Write operation successful!');
+            $this->info('Write operation successful! (DatabaseSeeder.php)');
         } else {
-            $this->error('No such file.');
+            $this->error('No such file: DatabaseSeeder.php.');
             return -1;
         }
 
